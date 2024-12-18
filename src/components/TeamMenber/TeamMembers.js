@@ -48,14 +48,19 @@ const members = [
 
 function TeamMembers() {
   return (
-    <div className="team-container">
-      {members.map((member) => (
-        <div key={member.id} className="team-card">
-          <img src={member.image} alt={member.name} />
-          <div className="team-name">{member.name}</div>
-        </div>
-      ))}
-    </div>
+    <>
+      <h1 style={{ textAlign: "center", marginTop: "30px" }}>
+        Thành viên của nhóm
+      </h1>
+      <div className="team-container">
+        {members.map((member) => (
+          <div key={member.id} className="team-card">
+            <img src={member.image} alt={member.name} />
+            <div className="team-name">{member.name}</div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 

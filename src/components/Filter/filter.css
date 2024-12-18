@@ -1,5 +1,13 @@
 .filter {
   display: flex;
-  justify-content: flex-end;
-  max-width: 1600px;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.filter-search {
+  height: 100px;
+}
+.filter-slider {
+  width: 300px;
 }
