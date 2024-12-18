@@ -44,7 +44,7 @@ const FooterC = () => {
         {/* Video */}
         <div style={styles.videoSection}>
           <iframe
-            width="400"
+            width="100%"
             height="250"
             src="https://www.youtube.com/embed/GXeSJqGsdcQ"
             title="Tôi yêu ULIS là bởi..."
@@ -63,7 +63,7 @@ const FooterC = () => {
 const styles = {
   footer: {
     marginTop: "50px",
-    padding: "20px",
+    padding: "20px 0px",
     background: "linear-gradient(to top right, #c0f1a3, #9cbdf0, #ffb1a3)",
     color: "#000",
     borderTop: "2px solid #ddd",
@@ -98,12 +98,6 @@ const styles = {
     width: "100px",
     height: "100px",
     objectFit: "cover",
-    borderRadius: "8px",
-    border: "2px solid #fff",
-  },
-  video: {
-    width: "100%",
-    maxWidth: "300px",
     borderRadius: "8px",
     border: "2px solid #fff",
   },
