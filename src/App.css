@@ -57,3 +57,16 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
+.full {
+  background: linear-gradient(
+    to right bottom,
+    rgba(238, 118, 85, 0.295),
+    rgba(68, 76, 190, 0.329),
+    rgba(163, 238, 148, 0.192),
+    rgba(248, 148, 148, 0.342)
+  );
+  /* url("https://i.pinimg.com/736x/24/63/96/246396e10e9b6576ad16c9a88e3ee75d.jpg"); */
+}
+.ant-layout {
+  background: transparent;
+}
