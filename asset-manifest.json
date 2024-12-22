@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/ulis-2025/static/css/main.f151bdbd.css",
-    "main.js": "/ulis-2025/static/js/main.d793ca9a.js",
+    "main.css": "/ulis-2025/static/css/main.2a5b07f4.css",
+    "main.js": "/ulis-2025/static/js/main.188f2954.js",
     "static/js/488.22357f90.chunk.js": "/ulis-2025/static/js/488.22357f90.chunk.js",
     "static/media/image9.jpg": "/ulis-2025/static/media/image9.d384cf85f0e756dfefb6.jpg",
     "static/media/image1.jpg": "/ulis-2025/static/media/image1.a7fcb1b01d5d9f9580f6.jpg",
     "static/media/image3.jpg": "/ulis-2025/static/media/image3.72a8b785183519287004.jpg",
     "static/media/image11.jpg": "/ulis-2025/static/media/image11.f5ac8de9365cd814bc3a.jpg",
+    "static/media/logo.png": "/ulis-2025/static/media/logo.92bcf5f35190fbdec171.png",
     "index.html": "/ulis-2025/index.html",
-    "main.f151bdbd.css.map": "/ulis-2025/static/css/main.f151bdbd.css.map",
-    "main.d793ca9a.js.map": "/ulis-2025/static/js/main.d793ca9a.js.map",
+    "main.2a5b07f4.css.map": "/ulis-2025/static/css/main.2a5b07f4.css.map",
+    "main.188f2954.js.map": "/ulis-2025/static/js/main.188f2954.js.map",
     "488.22357f90.chunk.js.map": "/ulis-2025/static/js/488.22357f90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f151bdbd.css",
-    "static/js/main.d793ca9a.js"
+    "static/css/main.2a5b07f4.css",
+    "static/js/main.188f2954.js"
   ]
 }
