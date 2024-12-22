@@ -54,7 +54,7 @@ const styles = {
     backgroundColor: "#f5f5f5",
   },
   card: {
-    width: "300px",
+    width: "40%",
     padding: "20px",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",

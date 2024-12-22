@@ -4,7 +4,7 @@ import "antd/dist/reset.css";
 
 const { Option } = Select;
 
-const PricePanel = ({ ranges }) => {
+const PricePanel = ({ ranges, title }) => {
   // Automatically update price input based on dropdown selection
   const handleRangeChange = (value) => {};
 
@@ -20,11 +20,11 @@ const PricePanel = ({ ranges }) => {
         borderRadius: "8px",
       }}
     >
-      <h2 style={{ marginBottom: "10px" }}>Mức giá</h2>
+      <h2 style={{ marginBottom: "10px" }}>{title}</h2>
 
       {/* Dropdown */}
       <Select
-        defaultValue="Tất cả mức giá"
+        defaultValue={"Tất cả " + title}
         style={{ width: "100%", marginBottom: "15px" }}
         onChange={handleRangeChange}
       >
@@ -34,29 +34,6 @@ const PricePanel = ({ ranges }) => {
           </Option>
         ))}
       </Select>
-
-      <Divider style={{ margin: "10px 0" }} />
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "15px",
-        }}
-      >
-        <InputNumber placeholder="Từ" min={0} style={{ width: "45%" }} />
-        <span style={{ alignSelf: "center" }}>➔</span>
-        <InputNumber placeholder="Đến" min={0} style={{ width: "45%" }} />
-      </div>
-
-      <Button
-        type="primary"
-        block
-        onClick={handleApply}
-        style={{ backgroundColor: "#f5222d", borderColor: "#f5222d" }}
-      >
-        Áp dụng
-      </Button>
     </div>
   );
 };

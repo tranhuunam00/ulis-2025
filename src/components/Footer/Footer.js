@@ -1,106 +1,70 @@
-// Footer Component
-const FooterC = () => {
+import React from "react";
+import "./footer.css";
+
+const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.container}>
-        {/* Thông tin giới thiệu */}
-        <div style={styles.infoSection}>
-          <h3>ULIS 2025</h3>
-          <p>
-            Trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội. Dự án
-            <strong> Nhà trọ Online</strong> hỗ trợ sinh viên tìm kiếm và quản
-            lý phòng trọ.
-          </p>
-        </div>
-
-        <div style={styles.infoSection}>
-          <h3>Liên Hệ</h3>
-          <p>Số điện thoại: 0961 766 816</p>
-          <p>Gmail: 0961 766 816</p>
-        </div>
-
-        {/* Hình ảnh */}
-        <div style={styles.mediaSection}>
-          <h4>Hình ảnh về ULIS</h4>
-          <div style={styles.imageGallery}>
-            <img
-              src="https://ulis.vnu.edu.vn/files/uploads/2017/03/2844_1545813_198068233726252_1601468544_n.jpg"
-              alt="Hình 1"
-              style={styles.image}
-            />
-            <img
-              src="https://ulis.vnu.edu.vn/files/uploads/2022/10/305437749_5579614905458926_2602933421984147310_n-1024x683.jpg"
-              alt="Hình 2"
-              style={styles.image}
-            />
-            <img
-              src="https://toquoc.mediacdn.vn/280518851207290880/2022/9/29/dai-hoc-ngoai-ngu-2-16644117600561260372599.jpg"
-              alt="Hình 3"
-              style={styles.image}
-            />
+    <div className="footer-container">
+      <div className="footer-content">
+        {/* Phần thông tin liên lạc */}
+        <div className="footer-left">
+          <h2>LIÊN LẠC VỚI CHÚNG MÌNH</h2>
+          <p>Trung tâm công nghệ thông tin</p>
+          <p>Số 1 Phạm Văn Đồng, quận Cầu Giấy, TP Hà Nội</p>
+          <p>📞 03969372151</p>
+          <p>✉️ theFishersict.since24@gmail.com</p>
+          <div className="footer-icons">
+            <a href="#" aria-label="Facebook">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i className="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
 
-        {/* Video */}
-        <div style={styles.videoSection}>
+        {/* Phần bản đồ */}
+        <div className="footer-map">
+          <h2>Bản đồ</h2>
           <iframe
-            width="100%"
-            height="250"
-            src="https://www.youtube.com/embed/GXeSJqGsdcQ"
-            title="Tôi yêu ULIS là bởi..."
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.869187683282!2d105.78068631533136!3d21.038132792849306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab62c5e3602f%3A0x4b61e7b7f7e6cfb8!2zU-G7kSAxIFBo4bqhbSBW4buNbiDEkOG7i25nLCBD4bunYSBD4butIEdp4bqlYSwgSGFub2kgVGjhu4sgUXXhuq1uLCBIw6AgTuG7mWkgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1679744286337!5m2!1sen!2s"
+            width="300"
+            height="200"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
+          <div className="thank-you">
+            <p>❤️ Cảm ơn bạn đã ghé thăm website của chúng tôi! ❤️</p>
+          </div>
+        </div>
+
+        {/* Phần form và lời cảm ơn */}
+        <div className="footer-right">
+          <h2>Share your experience with us!</h2>
+          <form>
+            <div className="form-row">
+              <input type="text" name="firstName" placeholder="First Name" />
+              <input type="text" name="lastName" placeholder="Last Name" />
+            </div>
+            <input type="email" name="email" placeholder="Email *" required />
+            <textarea name="message" placeholder="Message"></textarea>
+
+            <button type="submit" className="send-button">
+              Send
+            </button>
+          </form>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 
-// Styles
-const styles = {
-  footer: {
-    marginTop: "50px",
-    padding: "20px 0px",
-    background: "linear-gradient(to top right, #c0f1a3, #9cbdf0, #ffb1a3)",
-    color: "#000",
-    borderTop: "2px solid #ddd",
-  },
-  container: {
-    margin: "10px 10%",
-
-    display: "flex",
-    justifyContent: "space-around",
-    flexWrap: "wrap",
-    gap: "20px",
-  },
-  infoSection: {
-    flex: "1 1 300px",
-    textAlign: "left",
-  },
-  mediaSection: {
-    flex: "1 1 300px",
-    textAlign: "center",
-  },
-  videoSection: {
-    flex: "1 1 300px",
-    textAlign: "center",
-  },
-  imageGallery: {
-    display: "flex",
-    gap: "10px",
-    justifyContent: "center",
-    flexWrap: "wrap",
-  },
-  image: {
-    width: "100px",
-    height: "100px",
-    objectFit: "cover",
-    borderRadius: "8px",
-    border: "2px solid #fff",
-  },
-};
-
-export default FooterC;
+export default Footer;

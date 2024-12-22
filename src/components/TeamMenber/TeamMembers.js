@@ -48,10 +48,21 @@ const members = [
 
 function TeamMembers() {
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }}
+    >
       <h1 style={{ textAlign: "center", marginTop: "30px" }}>
         Thành viên của nhóm
       </h1>
+      <h2>
+        Nhóm 50 xin giới thiệu Trọ Hub - nền tảng tìm kiếm phòng trọ trực tuyến
+        dành riêng cho sinh viên tại Cầu Giấy. Với Trọ Hub, việc tìm một căn
+        phòng phù hợp trở nên đơn giản và nhanh chóng hơn bao giờ hết.
+      </h2>
       <div className="team-container">
         {members.map((member) => (
           <div key={member.id} className="team-card">
@@ -60,7 +71,7 @@ function TeamMembers() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

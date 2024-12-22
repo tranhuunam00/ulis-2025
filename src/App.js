@@ -14,19 +14,89 @@ import "./App.css";
 import { ImgApps } from "./constant/images";
 import RoomCard from "./components/comment/Comment ";
 import FooterC from "./components/Footer/Footer";
+import RegisterForm from "./components/login/login";
 
 const { Content, Footer, Sider } = Layout;
 
-const roomData = {
-  name: "Phòng trọ tiện nghi Quận 1",
-  description: "Phòng rộng rãi, đầy đủ nội thất, gần trung tâm.",
-  rating: 4,
-  comments: [
-    "Phòng rất sạch sẽ và tiện nghi.",
-    "Chủ nhà thân thiện, giá hợp lý.",
-    "Vị trí tuyệt vời, rất gần chợ và bến xe.",
-  ],
-};
+const reviews = [
+  {
+    name: "Lê Minh",
+    description:
+      "Tôi là sinh viên năm nhất, lần đầu ra Hà Nội học, không có người quen để hỏi phòng trọ. May mắn thay, nhờ web này mà tôi tìm được phòng gần trường, giá hợp lý, chủ nhà lại thân thiện. Quá trình tìm kiếm rất nhanh và dễ dàng, chỉ cần vài cú click là có ngay danh sách phòng phù hợp. Cảm ơn đội ngũ hỗ trợ nhiệt tình!",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Dịch vụ rất nhanh chóng.",
+      "Phòng rất sạch sẽ và tiện nghi.",
+      "Đội ngũ hỗ trợ rất nhiệt tình.",
+    ],
+  },
+  {
+    name: "Marie Dupont",
+    description:
+      "Tôi là người nước ngoài đến Việt Nam học tập, ban đầu rất bỡ ngỡ trong việc tìm nhà trọ. Nhờ web, tôi không chỉ tìm được nơi ở tốt mà còn nhận được hỗ trợ tận tình từ cộng đồng người dùng, dù tôi chưa thành thạo tiếng Việt.",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Hỗ trợ tận tình, dù tôi không thành thạo tiếng Việt.",
+      "Phòng sạch sẽ, đúng như mô tả.",
+      "Rất hài lòng với dịch vụ.",
+    ],
+  },
+  {
+    name: "Tuấn Anh",
+    description:
+      "Ban đầu tôi khá lo lắng khi tìm phòng trọ qua mạng vì sợ lừa đảo, nhưng trang web này thật sự đáng tin cậy. Tôi không chỉ tìm được phòng ưng ý mà còn nhận được nhiều kinh nghiệm bổ ích từ cộng đồng người dùng trên đây.",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Trang web rất đáng tin cậy.",
+      "Tìm được phòng nhanh chóng, ưng ý.",
+      "Nhiều thông tin hữu ích từ cộng đồng.",
+    ],
+  },
+  {
+    name: "Hoàng Lan",
+    description:
+      "Tôi có con nhỏ, nên tiêu chí chọn phòng rất khắt khe: gần trường học, khu vực an toàn, không quá ồn ào. Nhờ web mà tôi tìm được phòng ưng ý, đúng tiêu chí, giá cả lại hợp lý. Đặc biệt, đội ngũ hỗ trợ rất nhiệt tình trong việc tư vấn và kết nối với chủ nhà.",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Phòng đúng tiêu chí, giá hợp lý.",
+      "Đội ngũ hỗ trợ tận tình.",
+      "Khu vực an toàn, rất phù hợp cho gia đình.",
+    ],
+  },
+  {
+    name: "Ngọc Hà",
+    description:
+      "Là sinh viên ngoại tỉnh, tôi gặp khó khăn khi phải chuyển trọ thường xuyên. Nhờ web mà việc tìm phòng mới trở nên dễ dàng hơn rất nhiều. Thêm nữa, web còn có tính năng lọc theo tiêu chí, giúp tôi tiết kiệm thời gian và công sức.",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Tính năng lọc rất hữu ích.",
+      "Tiết kiệm thời gian khi tìm phòng.",
+      "Phòng mới phù hợp, chuyển trọ dễ dàng.",
+    ],
+  },
+  {
+    name: "Hương Thảo",
+    description:
+      "Tôi là nhân viên văn phòng, công việc bận rộn nên không có nhiều thời gian tìm phòng. Nhờ web, tôi đã tìm được một căn trọ đầy đủ tiện nghi, gần chỗ làm. Thậm chí, tôi còn có thể xem hình ảnh phòng trước khi đến tận nơi. Điều này giúp tôi tiết kiệm rất nhiều thời gian và công sức.",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Hình ảnh phòng rất trực quan.",
+      "Phòng gần chỗ làm, đầy đủ tiện nghi.",
+      "Tiết kiệm thời gian tìm kiếm.",
+    ],
+  },
+  {
+    name: "Anh Đức",
+    description:
+      "Tôi sở hữu một nhà trọ cho thuê nhưng gặp khó khăn trong việc tìm kiếm người thuê phù hợp. Sau khi đăng tin lên web, phòng trọ của tôi đã được thuê chỉ trong vòng một tuần. Trang web không chỉ giúp kết nối nhanh chóng mà còn đảm bảo an toàn, vì mọi thông tin đều được kiểm duyệt cẩn thận.",
+    rating: Math.random() < 0.5 ? 4 : 5,
+    comments: [
+      "Phòng trọ được thuê rất nhanh.",
+      "Thông tin được kiểm duyệt cẩn thận.",
+      "Kết nối nhanh chóng và an toàn.",
+    ],
+  },
+];
 
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
   (icon, index) => {
@@ -55,11 +125,16 @@ const App = () => {
   return (
     <Layout>
       <HeaderC />
-      <Slideshow />
-      <TeamMembers />
+      <div id="slideshow">
+        <Slideshow />
+      </div>
+      <div id="team-members">
+        <TeamMembers />
+        <RegisterForm />
+      </div>
       <h1 style={{ textAlign: "center" }}>Thông tin Ký túc xá</h1>
 
-      <div className="card-cont">
+      <div id="info" className="card-cont">
         {/* Ký túc xá Mễ Trì */}
         <Card
           image={
@@ -221,13 +296,13 @@ Có chỗ để xe, không
 `}
         />
       </div>
-      <h1>Bình Luận</h1>
+      <h1 id="comment">Bình Luận</h1>
       <div className="comment-cont">
-        <RoomCard room={roomData} />
-        <RoomCard room={roomData} />
-        <RoomCard room={roomData} />
-        <RoomCard room={roomData} />
+        {reviews.map((r) => (
+          <RoomCard room={r} />
+        ))}
       </div>
+      <div id="footer"></div>
       <FooterC />
       <Footer style={{ textAlign: "center" }}>
         ULIS 2024 ©{new Date().getFullYear()} Created by ULIS TE
