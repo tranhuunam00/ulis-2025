@@ -60,13 +60,47 @@ h1 {
 .full {
   background: linear-gradient(
     to right bottom,
-    rgba(238, 118, 85, 0.295),
-    rgba(68, 76, 190, 0.329),
-    rgba(163, 238, 148, 0.192),
-    rgba(248, 148, 148, 0.342)
+    #1826286e,
+    #65ccb7bb,
+    #57ba979a,
+    #3b945f93
   );
   /* url("https://i.pinimg.com/736x/24/63/96/246396e10e9b6576ad16c9a88e3ee75d.jpg"); */
 }
 .ant-layout {
   background: transparent;
+}
+.comment {
+  padding: 50px;
+  background: linear-gradient(
+      to right bottom,
+      #1826286e,
+      #65ccb7bb,
+      #57ba979a,
+      #3b945f93
+    ),
+    url("https://png.pngtree.com/thumb_back/fh260/background/20210323/pngtree-mountain-forest-setting-zoom-virtual-background-image_591549.jpg");
+}
+.visual {
+  padding: 50px;
+  background: linear-gradient(
+      to right bottom,
+      #1826286e,
+      #65ccb7bb,
+      #57ba979a,
+      #3b945f93
+    ),
+    url("https://free.vector6.com/wp-content/uploads/2020/03/vector-thien-nhien-0032.jpg");
+}
+
+.product {
+  padding: 50px;
+  background: linear-gradient(
+      to right bottom,
+      #1826286e,
+      #65ccb7bb,
+      #57ba979a,
+      #3b945f93
+    ),
+    url("https://free.vector6.com/wp-content/uploads/2020/03/vector-thien-nhien-0032.jpg");
 }

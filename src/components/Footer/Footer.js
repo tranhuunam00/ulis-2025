@@ -7,9 +7,14 @@ const FooterC = () => {
         <div style={styles.infoSection}>
           <h3>ULIS 2025</h3>
           <p>
-            Trường Đại học Ngoại ngữ - Đại học Quốc gia Hà Nội. Dự án
-            <strong> Nhà trọ Online</strong> hỗ trợ sinh viên tìm kiếm và quản
-            lý phòng trọ.
+            ULISERS ơi, bạn đang băn khoăn vì tìm kiếm những giải pháp giúp tiết
+            kiệm tối ưu chi phí mua sắm? Hay đang loay hoay tìm kiếm một
+            <strong> nền tảng uy tín </strong> để gửi gắm những món đồ không còn
+            sử dụng nhưng vẫn có giá trị?
+          </p>
+          <p>
+            Nếu câu trả lời là có thì <strong> “EcoTrade”</strong> chính là giải
+            pháp cho bạn.
           </p>
         </div>
 

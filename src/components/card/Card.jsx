@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button } from "antd";
 import "./Card.css";
 
-const Card = ({ image, address, des, price }) => {
+const Card = ({ image, address, des, price, category, color }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const handleOpenModal = () => {
@@ -56,13 +56,14 @@ const Card = ({ image, address, des, price }) => {
           />
           <h3>{address}</h3>
           <p>
-            <strong>Giá:</strong> {price}
+            <strong>Thông tin:</strong> {price}
           </p>
           <p>
             <strong>Mô tả:</strong> {des}
           </p>
         </div>
       </Modal>
+      {category && <div className={`card-ticket ${color}`}>{category}</div>}
     </div>
   );
 };

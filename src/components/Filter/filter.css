@@ -4,10 +4,17 @@
   gap: 50px;
   flex-wrap: wrap;
   align-items: center;
+  background-color: transparent;
 }
 .filter-search {
   height: 100px;
 }
 .filter-slider {
   width: 300px;
+}
+.rangede {
+  max-width: 200px;
+}
+.ant-select {
+  margin: 0 !important;
 }

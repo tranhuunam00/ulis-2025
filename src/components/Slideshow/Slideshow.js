@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Slideshow.css";
 
 const images = [
-  "https://media.viez.vn/prod/2021/8/5/large_1628183218422_e1402e685c.png",
-  "https://media.viez.vn/prod/2021/8/5/large_1628183201541_1547ef8b24.png",
-  "https://vcdn1-vnexpress.vnecdn.net/2024/03/01/truong1-2226-1709270711.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=shl17z4MzE29l0EXWNjRHA",
+  "https://vcdn1-vnexpress.vnecdn.net/2023/08/22/ngoai-ngu-7513-1692670691.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=4TM-Of8vcg6pGJn4AkLfiA",
+  "https://ulis.vnu.edu.vn/files/uploads/2022/01/ULISbyLienV4-Copy-1024x683.jpg",
+  "https://thegioianh.diendandoanhnghiep.vn/wp-content/uploads/2024/01/20b-5.jpg",
 ];
 
 function Slideshow() {

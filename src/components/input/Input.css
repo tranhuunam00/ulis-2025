@@ -9,7 +9,7 @@
   padding: 10px 10px 10px 5px;
   font-size: 16px;
   border: none;
-  border: 2px solid #ccc;
+  border: 2px solid #000000;
   background: transparent;
   outline: none;
   transition: all 0.3s ease;
@@ -24,7 +24,7 @@ label {
   top: 10px;
   left: 5px;
   font-size: 16px;
-  color: #aaa;
+  color: #000000;
   pointer-events: none;
   transition: all 0.3s ease;
 }

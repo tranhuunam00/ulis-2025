@@ -1,56 +1,45 @@
 import React from "react";
 import "./TeamMembers.css";
+import { ImgApps } from "../../constant/images";
 
 const members = [
   {
     id: 1,
-    name: "Nguyễn Hoài Thương",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    name: "Bùi Thị Mai Anh - Khoa SPTA - 23E19",
+    image: ImgApps.buimaianh,
   },
   {
     id: 2,
-    name: "Lê Trương Thủy Tiên",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    name: "Cao Vân Anh - Khoa NN&VH Hàn Quốc",
+    image: ImgApps.caovananh,
   },
   {
     id: 3,
-    name: "Hoàng Ngọc Khánh Toàn (Trưởng nhóm)",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    name: "Hoàng Khánh An - Khoa NN&VH Pháp",
+    image: ImgApps.hoangankhanh,
   },
   {
     id: 4,
-    name: "Trương Thế Toàn",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    name: "Lê Hoài An - SPTA - 23E16",
+    image: ImgApps.lehoaian,
   },
   {
     id: 5,
-    name: "Lê Thị Thu Trà",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    name: "Nguyễn Diệu An - SPTA - 23E3",
+    image: ImgApps.nguyendieuan,
   },
   {
     id: 6,
-    name: "Vũ Thị Bích Trà",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
-  },
-  {
-    id: 7,
-    name: "Chu Lê Thu Trang",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    name: "Nguyễn Thanh Hà An - NN&VH Nhật Bản",
+    image: ImgApps.thanhan,
   },
 ];
 
 function TeamMembers() {
   return (
-    <>
+    <div className="TeamMembers">
       <h1 style={{ textAlign: "center", marginTop: "30px" }}>
-        Thành viên của nhóm
+        Đội ngũ thực hiện
       </h1>
       <div className="team-container">
         {members.map((member) => (
@@ -60,7 +49,7 @@ function TeamMembers() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

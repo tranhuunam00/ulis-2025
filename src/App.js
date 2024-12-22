@@ -16,16 +16,169 @@ import RoomCard from "./components/comment/Comment ";
 import FooterC from "./components/Footer/Footer";
 
 const { Content, Footer, Sider } = Layout;
+const datas = [
+  // Sách vở
+  {
+    image:
+      "https://tailieuvnu.com/wp-content/uploads/2021/05/08/Giao-trinh-Triet-hoc.png",
+    price: "20.000 VNĐ",
+    address: "Triết học Mac -Lenin",
+    des: `📚 **Danh mục**: Sách giáo trình, sách tham khảo dành cho sinh viên.
+🏠 **Vị trí**: Gần Đại học Quốc gia, Xuân Thủy, Cầu Giấy, thuận tiện cho việc nhận sách.
+🌟 **Tình trạng**:
+- Sách đã qua sử dụng nhưng còn khá mới (80%).
+- Nội dung không bị rách hay mất trang.
+💥 **Điểm nổi bật**: Giá cực rẻ, phù hợp với sinh viên cần tài liệu học tập.`,
+    category: "sách vở",
+    color: "green",
+  },
+  {
+    image:
+      "https://tailieuvnu.com/wp-content/uploads/2020/11/14/Giao-trinh-Kinh-te-vi-mo-PGS.TS-Phi-Manh-Hong-UEB.png",
+    price: "25.000 VNĐ",
+    address: "Kinh tế vi mô",
+    des: `📚 **Danh mục**: Sách kinh tế vi mô dành cho sinh viên ngành kinh tế.
+🏠 **Vị trí**: Cầu Giấy, Hà Nội, gần các trường đại học lớn.
+🌟 **Tình trạng**:
+- Sách cũ, chất lượng nội dung còn nguyên vẹn.
+- Không có vết bẩn hoặc trang bị rách.
+💥 **Điểm nổi bật**: Giá hợp lý, rất cần thiết cho các môn học cơ bản.`,
+    category: "sách vở",
+    color: "green",
+  },
+  {
+    image: "https://ulis.vnu.edu.vn/files/uploads/2019/03/IMG_3518-Copy.jpg",
+    price: "30.000 VNĐ",
+    address: "Sách ngữ pháp tiếng Anh",
+    des: `📚 **Danh mục**: Sách học ngữ pháp tiếng Anh.
+🏠 **Vị trí**: Gần Đại học Sư phạm, Hà Nội.
+🌟 **Tình trạng**:
+- Sách cũ nhưng giữ gìn cẩn thận, không rách hoặc mất trang.
+- Có ghi chú và gợi ý học tập từ người sử dụng trước.
+💥 **Điểm nổi bật**: Phù hợp với sinh viên luyện thi TOEIC, IELTS.`,
+    category: "sách vở",
+    color: "green",
+  },
+  // Đồ dùng cá nhân
+  {
+    image:
+      "https://down-vn.img.susercontent.com/file/sg-11134201-22110-f7u40fqxe1jvf8",
+    price: "15.000 VNĐ",
+    address: "Kéo cắt cây",
+    des: `🛠️ **Danh mục**: Dụng cụ cá nhân, kéo cắt cây phù hợp cho gia đình hoặc người yêu làm vườn.
+🏠 **Vị trí**: Khu vực Dịch Vọng, gần công viên Cầu Giấy.
+🌟 **Tình trạng**:
+- Sản phẩm đã qua sử dụng, vẫn sắc bén và hoạt động tốt.
+- Thích hợp cho các công việc cắt tỉa cây cảnh, làm vườn nhỏ.
+💥 **Điểm nổi bật**: Giá rẻ hơn so với mua mới, đảm bảo tiết kiệm chi phí.`,
+    category: "đồ dùng cá nhân",
+    color: "blue",
+  },
+  {
+    image: "https://happybag.vn/uploads/2024/06/balo-du-lich-b.png.webp",
+    price: "50.000 VNĐ",
+    address: "Balo du lịch mini",
+    des: `🛠️ **Danh mục**: Balo du lịch mini cho người thích khám phá.
+🏠 **Vị trí**: Ngõ 12, Xuân Thủy, Cầu Giấy, Hà Nội.
+🌟 **Tình trạng**:
+- Balo đã qua sử dụng nhưng còn nguyên vẹn, dây kéo hoạt động tốt.
+- Thiết kế gọn nhẹ, phù hợp cho chuyến đi ngắn.
+💥 **Điểm nổi bật**: Giá ưu đãi, tiết kiệm hơn so với hàng mới.`,
+    category: "đồ dùng cá nhân",
+    color: "blue",
+  },
+  {
+    image:
+      "https://bizweb.dktcdn.net/100/236/309/files/1-171ceae1-e3b9-45bf-a2c7-f1dbc1dfaa91.jpg?v=1681792176858",
+    price: "25.000 VNĐ",
+    address: "Bình nước giữ nhiệt",
+    des: `🛠️ **Danh mục**: Bình nước giữ nhiệt cho dân văn phòng, sinh viên.
+🏠 **Vị trí**: Dịch Vọng, gần công viên Cầu Giấy.
+🌟 **Tình trạng**:
+- Đã qua sử dụng nhưng vẫn giữ nhiệt tốt, không rò rỉ nước.
+- Dung tích 500ml, phù hợp cho nhu cầu cá nhân.
+💥 **Điểm nổi bật**: Giá rẻ hơn nhiều so với sản phẩm mới.`,
+    category: "đồ dùng cá nhân",
+    color: "blue",
+  },
+  // Đồ gia dụng
+  {
+    image:
+      "https://gomsubattrang.vn/uploads/data/20/files/products/Bo-bat-dia-bat-trang/mua-bat-dia-bat-trang-gia-re-ve-hoa-mai/mua-bat-dia-bat-trang-o-dau-re-dep-ve-cu-qua-1.jpg",
+    price: "200.000 VNĐ",
+    address: "Bộ bát Bát Tràng",
+    des: `🍴 **Danh mục**: Đồ gia dụng - Bộ bát gốm sứ cao cấp từ làng nghề Bát Tràng.
+🏠 **Vị trí**: Ngõ 3, Nghĩa Tân, Cầu Giấy, dễ dàng vận chuyển.
+🌟 **Tình trạng**:
+- Đã qua sử dụng nhưng vẫn giữ được độ sáng bóng và không có vết nứt.
+- Thiết kế họa tiết truyền thống, đẹp mắt.
+💥 **Điểm nổi bật**: Phù hợp cho các gia đình, giá ưu đãi và hỗ trợ giao hàng trong nội thành.`,
+    category: "đồ gia dụng",
+    color: "yellow",
+  },
+  {
+    image: "https://pos.nvncdn.com/14f951-12134/art/20240406_uX451Vy2.jpeg",
+    price: "300.000 VNĐ",
+    address: "Nồi chiên không dầu",
+    des: `🍴 **Danh mục**: Nồi chiên không dầu cho gia đình hiện đại.
+🏠 **Vị trí**: Nghĩa Tân, Cầu Giấy, Hà Nội.
+🌟 **Tình trạng**:
+- Đã qua sử dụng, hoạt động tốt, không trầy xước bên ngoài.
+- Dung tích 3.5L, phù hợp cho bữa ăn gia đình.
+💥 **Điểm nổi bật**: Giá cả phải chăng, tiết kiệm hơn 50% so với mua mới.`,
+    category: "đồ gia dụng",
+    color: "yellow",
+  },
+  {
+    image:
+      "https://thumuadocuthanhnam.com/wp-content/uploads/2024/11/z6043916925277_a64dff3a165518ab2bf4ab14191aaaf7.jpg",
+    price: "150.000 VNĐ",
+    address: "Ấm đun siêu tốc",
+    des: `🍴 **Danh mục**: Ấm đun siêu tốc, công cụ cần thiết cho mọi gia đình.
+🏠 **Vị trí**: Gần công viên Nghĩa Đô, Cầu Giấy.
+🌟 **Tình trạng**:
+- Đã qua sử dụng, tốc độ đun nước vẫn nhanh và hiệu quả.
+- Thiết kế nhỏ gọn, không chiếm diện tích.
+💥 **Điểm nổi bật**: Giá siêu rẻ, bảo hành 1 tháng từ người bán.`,
+    category: "đồ gia dụng",
+    color: "yellow",
+  },
+];
 
 const roomData = {
-  name: "Phòng trọ tiện nghi Quận 1",
-  description: "Phòng rộng rãi, đầy đủ nội thất, gần trung tâm.",
+  name: "Quỳnh Anh",
+  description: "",
+  rating: 45,
+  comments: [
+    "Mình thấy trang web đã giúp các bạn sinh viên có lối sống xanh sạch đẹp khi có thể trao đổi và mua bán các đồ dùng tuy cũ những vẫn còn giá trị.",
+    " Mình đã chia sẻ trang web này với các bạn của mình và họ rất thích thú",
+  ],
+  avatar:
+    " https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-con-gai-24.jpg",
+};
+
+const roomData2 = {
+  name: "Nhật Linh",
+  description: "",
   rating: 4,
   comments: [
-    "Phòng rất sạch sẽ và tiện nghi.",
-    "Chủ nhà thân thiện, giá hợp lý.",
-    "Vị trí tuyệt vời, rất gần chợ và bến xe.",
+    "Trao đổi giáo trình ở đây thật tiện lợi và nhanh gọn.",
+    " Mình không phải mất công đăng bài trên nhiều nền tảng mạng xã hội nữa",
   ],
+  avatar:
+    "https://wellavn.com/wp-content/uploads/2024/11/anh-gai-xinh-2k5-7.jpg",
+};
+
+const roomData3 = {
+  name: "Khánh Chi",
+  description: "",
+  rating: 5,
+  comments: [
+    "Mong trang web có sức lan tỏa mạnh mẽ hơn nữa.",
+    " Mình đã tìm được người bạn thân mới có cùng sở thích là sắm đồ 2Hand sau vài lần trao đổi mua bán",
+  ],
+  avatar:
+    "https://danviet.mediacdn.vn/upload/3-2016/images/2016-08-29/147245963321437-anh-1.jpg",
 };
 
 const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
@@ -57,178 +210,97 @@ const App = () => {
       <Layout>
         <HeaderC />
         <Slideshow />
-        <TeamMembers />
-        <h1 style={{ textAlign: "center" }}>Thông tin Ký túc xá</h1>
+        <div className="visual">
+          <h1 style={{ textAlign: "center" }}>Tính năng nổi bật</h1>
+          <div className="card-cont">
+            <Card
+              image={
+                "https://sonca.vn/wp-content/uploads/2023/11/Van-phong-pham-Kon-Tum-Cua-hang-van-phong-pham-Son-Ca-chuyen-ban-online-uy-tin-so-1-tai-Kon-Tum.png"
+              }
+              price={"ULISERS dễ dàng trao đổi và mua bán đồ cũ"}
+              address={"Đăng kí đồ"}
+              des={`🛍️ **Địa điểm**: Đường Nguyễn Cảnh Dị, quận Thanh Xuân, Hà Nội.
+🌟 **Đặc điểm**:
+- Không gian giao lưu mua bán đồ cũ dành riêng cho sinh viên ULIS.
+- Các mặt hàng phổ biến: sách, đồ dùng học tập, quần áo, đồ gia dụng.
+📚 **Ưu điểm**:
+- Giá cả hợp lý, hỗ trợ sinh viên tiết kiệm chi phí.
+- Cơ hội tái sử dụng đồ cũ, bảo vệ môi trường.
+🤝 **Hoạt động**:
+- Đăng ký đồ cần bán/mua qua ứng dụng hoặc tại điểm giao dịch.
+- Đổi đồ hoặc thanh toán trực tiếp nhanh chóng, tiện lợi.`}
+            />
 
-        <div className="card-cont">
-          {/* Ký túc xá Mễ Trì */}
-          <Card
-            image={
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s"
-            }
-            price={"1tr5 - 2tr"}
-            address={"Ký túc xá Mễ Trì, Thanh Xuân"}
-            des={`🏠 Địa chỉ: Đường Nguyễn Cảnh Dị, quận Thanh Xuân, Hà Nội.
-🌱 Môi trường sạch sẽ, không gian yên tĩnh, phù hợp với sinh viên.
-👍 Gần các trường ĐH Khoa học Tự nhiên, ĐH Xã hội & Nhân văn, ĐH Hà Nội.
-🌈 Cơ sở vật chất: Nhà ở được trang bị giường tầng, bàn học chung, wifi miễn phí.
-💥 Giá thuê: 1tr5 - 2tr/tháng (bao gồm điện, nước).`}
-          />
+            {/* Ký túc xá Ngoại ngữ */}
+            <Card
+              image={
+                "https://codesrevolvewordpress.s3.us-west-2.amazonaws.com/revolveai/2023/07/27103524/ai-based-recommendation-systems.png"
+              }
+              price={
+                "Mua sắm, trao đổi những món đồ với giá cả hợp lý, tiết kiệm"
+              }
+              address={"AI đề xuất theo nhu cầu"}
+              des={`🤖 **Hệ thống AI hỗ trợ**: Đưa ra gợi ý các món đồ phù hợp với nhu cầu cá nhân.
+🏠 **Địa điểm**: Khu vực Trường Đại học Ngoại ngữ, Phạm Văn Đồng, quận Cầu Giấy, Hà Nội.
+🛍️ **Đồ trao đổi/mua bán**:
+- Sách giáo trình, tài liệu học tập.
+- Đồ dùng cá nhân, đồ gia dụng cũ.
+- Quần áo, phụ kiện.
+🌟 **Ưu điểm**:
+- Giá cả hợp lý, tiết kiệm cho sinh viên.
+- Tính năng đề xuất thông minh, giúp tìm kiếm nhanh chóng.
+- Giao dịch dễ dàng, an toàn trong khuôn viên trường.`}
+            />
 
-          {/* Ký túc xá Ngoại ngữ */}
-          <Card
-            image={
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZavufBF1-mPAVqW_aqscJSEI7yoHQecEuQ&s"
-            }
-            price={"2tr - 2tr5"}
-            address={"Ký túc xá Ngoại ngữ, Cầu Giấy"}
-            des={`🏠 Địa chỉ: Đường Phạm Văn Đồng, quận Cầu Giấy, Hà Nội.
-🌱 Nằm trong khuôn viên Trường Đại học Ngoại ngữ, an ninh đảm bảo.
-👍 Tiện ích: Gần thư viện, nhà ăn tập thể, sân thể thao, trạm xe buýt.
-🌈 Nội thất: Phòng ở có giường tầng, quạt, bàn học. Điều hòa và bình nóng lạnh trong một số phòng.
-💥 Giá thuê: 2tr - 2tr5/tháng, phù hợp cho nhóm sinh viên.`}
-          />
-
-          {/* Ký túc xá Sư phạm */}
-          <Card
-            image={
-              "https://cdyhn.vn/wp-content/uploads/2020/03/ki-tuc-xa-my-dinh9.jpg"
-            }
-            price={"1tr - 1tr5"}
-            address={"Ký túc xá Sư phạm, Cầu Giấy"}
-            des={`🏠 Địa chỉ: Đường Xuân Thủy, quận Cầu Giấy, Hà Nội.
-🌱 Gần các trường ĐH Sư phạm, ĐH Quốc gia, ĐH Thương mại.
-👍 Môi trường thân thiện, có các dịch vụ ăn uống và giặt là.
-🌈 Cơ sở vật chất: Phòng rộng rãi, có giường tầng, khu vệ sinh chung sạch sẽ.
-💥 Giá thuê: 1tr - 1tr5/tháng, tiết kiệm chi phí cho sinh viên.`}
-          />
-
-          {/* Ký túc xá khác */}
-          <Card
-            image={
-              "https://css.vnu.edu.vn/sites/default/files/styles/large/public/logo/1_264175.jpg?itok=v9kCj-Ah"
-            }
-            price={"1tr - 2tr"}
-            address={"Khu vực lân cận các trường đại học"}
-            des={`🏠 Địa chỉ: Nhiều lựa chọn quanh khu vực các trường đại học tại Hà Nội.
-🌱 Đáp ứng nhu cầu tìm kiếm phòng trọ gần trường.
-👍 Nhiều mức giá, đa dạng về tiện nghi và diện tích.
-💥 Giá thuê: 1tr - 2tr/tháng, phù hợp với mọi nhu cầu của sinh viên.`}
-          />
+            <Card
+              image={
+                "https://subiz.com.vn/blog/wp-content/uploads/2022/11/subiz-bi-quyet-telesale-e1667384392973.png"
+              }
+              price={
+                "Đội ngũ nhiệt tình, trách nhiệm, mang lại cho các bạn sự tin tưởng"
+              }
+              address={"Đánh giá, phản hồi 24-7"}
+              des={`📞 **Hỗ trợ 24/7**: Đội ngũ luôn sẵn sàng lắng nghe và giải quyết mọi thắc mắc.
+🏠 **Địa chỉ**: Đường Xuân Thủy, quận Cầu Giấy, Hà Nội.
+🌟 **Gần các tiện ích**: 
+- Các trường đại học lớn (ĐH Sư phạm, ĐH Quốc gia, ĐH Thương mại).
+- Hệ thống quán ăn, dịch vụ giặt là trong khu vực.
+👍 **Đánh giá từ người dùng**:
+- "Dịch vụ nhanh chóng, hỗ trợ tận tình."
+- "Môi trường thân thiện, cảm giác rất an toàn."
+🤝 **Cam kết**:
+- Đáp ứng yêu cầu nhanh chóng, nâng cao trải nghiệm người dùng.`}
+            />
+          </div>
         </div>
 
         <h1 style={{ textAlign: "center" }}>Bộ Lọc</h1>
-
-        <Filter />
-        <h1 style={{ textAlign: "center" }}>Thông tin nhà trọ</h1>
-        <div className="card-cont">
-          <Card
-            image={ImgApps.image11}
-            price={"2tr9"}
-            address={"Khu vực Nghĩa Tân"}
-            des={`🏠Địa chỉ : Ngõ 3  Nghĩa tân - Cầu giấy
-🌱Phòng tầng 5 - 2tr9- thang bộ
-👍 Sát chợ nghĩa tân, sát trường cđ sư phạm, gần đh điện lực, báo chí, đh sư phạm, công viên nghĩa đô…
-🌈 Vs chung, giờ giấc tự do.
-💥 Nội thất :Full đồ, Thiết bị đều, đh, giường tủ,, nóng lạnh, bàn trang điểm…
-`}
-          />
-          <Card
-            image={ImgApps.image9}
-            price={"5tr"}
-            address={"Ngõ 68 Cầu Giấy"}
-            des={`🏠Nội thất:
-- Giường, Tủ, Điều Hoà, Nóng Lạnh, máy giặt
-- Có chỗ để xe rộng rãi, Có gác xép
-- 💔☝️🐉Có bàn bếp nấu ăn ngay trong phòng
-- Chỉ cần mang quần áo và đồ dùng cá nhân về là ở được luôn
-- Trước cửa nhà là chợ nên thuận tiện cho việc sinh hoạt
-- Gần các trường Đại Học lớn như: Giao Thông, Ngoại Thương,
- Quốc Gia, ĐH Hà Nội….
-- Nhà nằm ngay mặt ngõ 68 Cầu Giấy, thuận tiện đi lại và 
-vận chuyển đồ đạc
-📞Liên hệ: 0768333356 chính chủ ( A. TÙNG )
-
-`}
-          />
-
-          <Card
-            image={ImgApps.image3}
-            price={"3tr5"}
-            address={"Ngõ 89 Phạm Văn Đồng, Mai Dịch"}
-            des={`Cầu Giấy
-- Nhà 7 tầng thang máy 
-Nội thất: Điều hoà, nóng lạnh, tủ lạnh, máy giặt, gác xép, tủ bếp trên dưới, bếp từ, hút mùi, tủ quần áo 3 cánh, bàn ghế trang điểm, bàn ghế. 
-
-👉 Chú ý: 
--💥 Tối đa 3 người, 2 xe/ phòng
--💥 Nuôi pet: nếu ở sạch sẽ
--💥 Lối thoát hiểm riêng biệt, hệ thống PCCC, cửa chống cháy từng tầng, từng phòng.
-`}
-          />
-          <Card
-            image={ImgApps.image1}
-            price={"1tr5"}
-            address={"Ngõ 2 Hoàng Quốc Việt"}
-            des={`Loại phòng: phòng trọ studio.
-Đầy đủ tiện nghi: điều hòa, nóng lạnh, tủ quần áo, giường, vệ sinh khép kín, kệ bếp, máy giặt chung.
-💓🐽🐸Camera giám sát 24/7.
-Có chỗ để xe.
-💓🐽🐸Không chung chủ, giờ giấc tự do.
-Cửa khóa vân tay.
-An ninh tốt, PCCC đảm bảo.
-💓🐽🐸5 tầng thang bộ.
-Được nuôi pet.
-Liên hệ: 0961197823.
-`}
-          />
-
-          <Card
-            image={
-              "https://media-cdn-v2.laodong.vn/storage/newsportal/2023/3/27/1172466/Phong-Tro.jpeg"
-            }
-            price={"4tr"}
-            address={"Ngõ 2 Hoàng Quốc Việt"}
-            des={`Loại phòng: phòng trọ studio.
-Đầy đủ tiện nghi: điều hòa, nóng lạnh, tủ quần áo, giường, vệ sinh khép kín, kệ bếp, máy giặt chung.
-💔☝️🐉Camera giám sát 24/7.
-Có chỗ để xe.
-💔☝️🐉Không chung chủ, giờ giấc tự do.
-Cửa khóa vân tay.
-An ninh tốt, PCCC đảm bảo.
-💔☝️🐉5 tầng thang bộ.
-Được nuôi pet.
-Liên hệ: 0961197823.
-`}
-          />
-
-          <Card
-            image={
-              "https://xaydungthuanphuoc.com/wp-content/uploads/2022/09/mau-phong-tro-co-gac-lung-dep2022-5.jpg"
-            }
-            price={"2tr"}
-            address={"Ngõ 19 Âu Cơ"}
-            des={`Địa chỉ: 14 ngõ 79 Dương Quảng Hàm, Quan Hoa, Cầu Giấy, Hà Nội.
-🌽🍅Loại phòng: phòng trọ khép kín.
-Giá phòng: 3.5 triệu/tháng
-🌽🍅Đặc điểm:
-Đầy đủ tiện nghi: điều hòa, nóng lạnh, tủ quần áo, kệ giường, bàn bếp, vệ sinh khép kín, ban công, máy giặt chung.
-Hợp đồng thời hạn 12 tháng.
-🌽🍅Camera giám sát 24/7.
-Có thang máy.
-Chỉ được dùng bếp điện.
-Có chỗ để xe, không 
-
-`}
-          />
+        <div className="product">
+          <Filter />
+          <div
+            style={{
+              marginTop: "30px",
+            }}
+            className="card-cont"
+          >
+            {datas.map((data) => (
+              <Card {...data} />
+            ))}
+          </div>
         </div>
-        <h1>Bình Luận</h1>
-        <div className="comment-cont">
-          <RoomCard room={roomData} />
-          <RoomCard room={roomData} />
-          <RoomCard room={roomData} />
-          <RoomCard room={roomData} />
+
+        <div className="comment">
+          <h1>Bình Luận</h1>
+
+          <div className="comment-cont">
+            <RoomCard room={roomData} />
+            <RoomCard room={roomData2} />
+            <RoomCard room={roomData3} />
+          </div>
         </div>
+
+        <TeamMembers />
+
         <FooterC />
         <Footer style={{ textAlign: "center" }}>
           ULIS 2024 ©{new Date().getFullYear()} Created by ULIS TE
