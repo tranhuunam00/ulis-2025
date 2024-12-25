@@ -136,7 +136,7 @@ const App = () => {
         <Introduction />
       </div>
 
-      <h1 style={{ textAlign: "center" }}>Tính năng của TrọHUB</h1>
+      <h1 style={{ textAlign: "center" }}>Tính năng của Trọ HUB</h1>
       <IntroductionWeb />
       <div className="visual">
         <div className="card-cont">
@@ -444,7 +444,7 @@ Có chỗ để xe, không
         />
       </div>
       <div id="comment">
-        <h1>Bình Luận</h1>
+        <h1>Bình Luận (7)</h1>
 
         <CommentSection reviews={reviews} />
       </div>
@@ -453,6 +453,20 @@ Có chỗ để xe, không
         <Footer style={{ textAlign: "center" }}>
           ULIS 2024 ©{new Date().getFullYear()} Created by ULIS TE
         </Footer>
+      </div>
+
+      <div className="f2">
+        <img
+          src={ImgApps.logo}
+          style={{
+            height: "90px",
+            borderRadius: "5px",
+            margin: "5px",
+            cursor: "pointer",
+            objectFit: "contain",
+          }}
+        />
+        <h2 style={{ color: "white" }}>Tìm trọ không khó có Trọ Hub lo</h2>
       </div>
     </Layout>
   );

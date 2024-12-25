@@ -57,3 +57,16 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
 }
+.f2 {
+  z-index: 10;
+  width: 100%;
+  background: linear-gradient(to bottom right, #e7ca69, #1908afc4, #acf080c4);
+  height: 100px;
+  font-family: "Montserrat", sans-serif !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f2 img {
+  width: 160px;
+}

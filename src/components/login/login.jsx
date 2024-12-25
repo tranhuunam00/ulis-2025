@@ -49,7 +49,7 @@ const RegisterForm = () => {
   return (
     <div className="register-form-container">
       <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
-      <p>để nhận thông báo về phòng trọ mới tại khu vực của bạn TrọHub</p>
+      <p>để nhận thông báo về phòng trọ mới tại khu vực của bạn Trọ Hub</p>
       <form className="register-form" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
