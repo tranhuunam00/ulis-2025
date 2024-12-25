@@ -467,6 +467,26 @@ Có chỗ để xe, không
           }}
         />
         <h2 style={{ color: "white" }}>Tìm trọ không khó có Trọ Hub lo</h2>
+        <img
+          src="https://ulis.vnu.edu.vn/files/uploads/2023/12/ULISLogo2023_Transparent_TextWhite-01.png"
+          style={{
+            height: "50px",
+            borderRadius: "5px",
+            margin: "5px",
+            cursor: "pointer",
+            objectFit: "contain",
+          }}
+        />
+        <img
+          src={"https://www.vnu.edu.vn/upload/2015/01/17449/image/Logo-VNU.png"}
+          style={{
+            height: "50px",
+            borderRadius: "5px",
+            margin: "5px",
+            cursor: "pointer",
+            objectFit: "contain",
+          }}
+        />
       </div>
     </Layout>
   );
