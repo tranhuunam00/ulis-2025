@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ulis-2025/static/css/main.db4d05e5.css",
-    "main.js": "/ulis-2025/static/js/main.edfcbe64.js",
+    "main.css": "/ulis-2025/static/css/main.d3ee8dce.css",
+    "main.js": "/ulis-2025/static/js/main.75e2e15f.js",
     "static/js/488.22357f90.chunk.js": "/ulis-2025/static/js/488.22357f90.chunk.js",
     "static/media/home3.jpg": "/ulis-2025/static/media/home3.c8e3842ad797ae3d64d9.jpg",
     "static/media/image9.jpg": "/ulis-2025/static/media/image9.d384cf85f0e756dfefb6.jpg",
@@ -10,14 +10,15 @@
     "static/media/image3.jpg": "/ulis-2025/static/media/image3.72a8b785183519287004.jpg",
     "static/media/image11.jpg": "/ulis-2025/static/media/image11.f5ac8de9365cd814bc3a.jpg",
     "static/media/home2.jpg": "/ulis-2025/static/media/home2.78061b09765192825934.jpg",
+    "static/media/anhnhom50.jpg": "/ulis-2025/static/media/anhnhom50.f65a5faa4b9d1fdacf62.jpg",
     "static/media/logo.png": "/ulis-2025/static/media/logo.92bcf5f35190fbdec171.png",
     "index.html": "/ulis-2025/index.html",
-    "main.db4d05e5.css.map": "/ulis-2025/static/css/main.db4d05e5.css.map",
-    "main.edfcbe64.js.map": "/ulis-2025/static/js/main.edfcbe64.js.map",
+    "main.d3ee8dce.css.map": "/ulis-2025/static/css/main.d3ee8dce.css.map",
+    "main.75e2e15f.js.map": "/ulis-2025/static/js/main.75e2e15f.js.map",
     "488.22357f90.chunk.js.map": "/ulis-2025/static/js/488.22357f90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.db4d05e5.css",
-    "static/js/main.edfcbe64.js"
+    "static/css/main.d3ee8dce.css",
+    "static/js/main.75e2e15f.js"
   ]
 }

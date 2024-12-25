@@ -53,7 +53,6 @@ const RegisterForm = () => {
       <form className="register-form" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
-            <label>Họ và tên *</label>
             <input
               type="text"
               name="fullName"
@@ -66,7 +65,6 @@ const RegisterForm = () => {
             )}
           </div>
           <div className="form-group">
-            <label>Địa chỉ Email *</label>
             <input
               type="email"
               name="email"
@@ -79,7 +77,6 @@ const RegisterForm = () => {
         </div>
         <div className="form-row">
           <div className="form-group">
-            <label>Số điện thoại *</label>
             <input
               type="text"
               name="phone"
@@ -90,7 +87,6 @@ const RegisterForm = () => {
             {errors.phone && <span className="error">{errors.phone}</span>}
           </div>
           <div className="form-group">
-            <label>Phường đang cư trú *</label>
             <input
               type="text"
               name="confirmPassword"

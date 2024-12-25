@@ -211,12 +211,12 @@ const App = () => {
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://ussh.vnu.edu.vn/uploads/ussh/news/2020_04/untitled-20200415095242156.png",
+            "http://vnkgu.edu.vn/ckfinder/userfiles/images/7002.jpg",
+            "https://reviewedu.net/wp-content/uploads/2022/07/ktx.jpg",
           ]}
           image={
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s"
+            "https://icdn.dantri.com.vn/thumb_w/680/2022/09/12/can-canh-khu-noi-tru-dh-quoc-gia-ha-noi-tai-hoa-lacdocx-1662965357080.jpeg"
           }
           price={"1tr5 - 2tr"}
           address={"Ký túc xá Mễ Trì, Thanh Xuân"}
@@ -233,12 +233,12 @@ const App = () => {
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://nncn.edu.vn/wp-content/uploads/2021/06/ky-tuc-xa-cao-dang-ngoai-ngu-cong-nghe-ha-noi-.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZavufBF1-mPAVqW_aqscJSEI7yoHQecEuQ&s",
+            "https://css.vnu.edu.vn/sites/default/files/styles/large/public/logo/ktx_mt.jpg?itok=TnQO0HuK",
           ]}
           image={
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZavufBF1-mPAVqW_aqscJSEI7yoHQecEuQ&s"
+            "https://css.vnu.edu.vn/sites/default/files/pictures/img_1110.jpg"
           }
           price={"2tr - 2tr5"}
           address={"Ký túc xá Ngoại ngữ, Cầu Giấy"}
@@ -255,12 +255,12 @@ const App = () => {
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://kytucxa.hnue.edu.vn/portals/0/Users/A511.jpg",
+            "https://congdankhuyenhoc.qltns.mediacdn.vn/zoom/700_438/449484899827462144/2022/10/7/anh-1-thumb-16651205354131240060312.jpeg",
+            "https://staff.hnue.edu.vn/portals/0/Users/ktxsp.jpg",
           ]}
           image={
-            "https://cdyhn.vn/wp-content/uploads/2020/03/ki-tuc-xa-my-dinh9.jpg"
+            "https://img.giaoduc.net.vn/w1000/Uploaded/2024/ohpkvhu/2011_11_24/b1.png"
           }
           price={"1tr - 1tr5"}
           address={"Ký túc xá Sư phạm, Cầu Giấy"}
@@ -277,9 +277,9 @@ const App = () => {
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgTyfVFXvHJk9x4LCJL17mGFriio8vhu8Aw&s",
+            "https://cdn-i.vtcnews.vn/resize/th/upload/2023/08/10/ba6a8224-22375476.jpeg",
+            "https://cdn.tuoitre.vn/thumb_w/480/471584752817336320/2023/11/26/ky-tuc-xa-dh-su-pham--1700976849051400234597.jpeg",
           ]}
           image={
             "https://css.vnu.edu.vn/sites/default/files/styles/large/public/logo/1_264175.jpg?itok=v9kCj-Ah"
@@ -300,9 +300,9 @@ const App = () => {
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTzBfF1TMOPQz7jTcRRt23qs2HsNjvARkCg&s",
+            "https://media.vneconomy.vn/w800/images/upload/2022/07/12/phong-tro-gia-re-tphcm-1-2.jpg",
+            "https://ecogreen-saigon.vn/uploads/phong-tro-la-loai-hinh-nha-o-pho-bien-gia-re-tien-loi-cho-sinh-vien-va-nguoi-di-lam.png",
           ]}
           image={ImgApps.image11}
           price={"2tr9"}
@@ -319,9 +319,9 @@ const App = () => {
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://vov.vn/sites/default/files/styles/large/public/2024-06/h5_1.jpg",
+            "https://media.tinnhanhnhadat.vn/w640/images/upload//2022/10/07/siet-chat-quy-dinh-ve-dien-tich-phong-tro-cho-thue-can-can-cu-vao-dieu-kien-thuc-te-1.jpg",
+            "https://thematrixones.com.vn/wp-content/uploads/2023/01/unnamed-1.jpg",
           ]}
           image={ImgApps.image9}
           price={"5tr"}
@@ -346,9 +346,9 @@ vận chuyển đồ đạc
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://images2.thanhnien.vn/528068263637045248/2023/5/1/5620435b-1682962127518908546019.jpg",
+            "https://thematrixones.com.vn/wp-content/uploads/2023/01/unnamed-1.jpg",
+            "https://media.vneconomy.vn/w800/images/upload/2022/09/13/anh-t46-47.png",
           ]}
           image={ImgApps.image3}
           price={"3tr5"}
@@ -368,9 +368,9 @@ Nội thất: Điều hoà, nóng lạnh, tủ lạnh, máy giặt, gác xé
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
+            "https://thematrixones.com.vn/wp-content/uploads/2023/01/unnamed-1.jpg",
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN3rXiZqmKw3hYNKUyYugUbWcBgj3cZ7ypEQ&s",
           ]}
           image={ImgApps.image1}
           price={"1tr5"}
@@ -394,8 +394,8 @@ Liên hệ: 0961197823.
           }
           subImages={[
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://feliz-home.com.vn/wp-content/uploads/2023/02/uecuhb.jpg",
+            "https://phunuvietnam.mediacdn.vn/179072216278405120/2024/8/8/sinhvien-17231112626962036033230.jpg",
           ]}
           image={
             "https://media-cdn-v2.laodong.vn/storage/newsportal/2023/3/27/1172466/Phong-Tro.jpeg"
@@ -420,9 +420,9 @@ Liên hệ: 0961197823.
             "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://cdnphoto.dantri.com.vn/I9iA7PASZi0nX_DZ4WRhw0HHqWU=/thumb_w/1020/2024/08/09/4bbd72acc5d9618738c8-1723194566288.jpg",
+            "https://yduochn.com.vn/wp-content/uploads/phong-tro.jpg",
+            "https://wedo.vn/wp-content/uploads/2018/07/xay-nha-tro-gia-re.jpg",
           ]}
           image={
             "https://xaydungthuanphuoc.com/wp-content/uploads/2022/09/mau-phong-tro-co-gac-lung-dep2022-5.jpg"

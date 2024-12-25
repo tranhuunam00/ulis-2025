@@ -7,6 +7,7 @@ import home2 from "../assets/images/home2.jpg";
 import home3 from "../assets/images/home3.jpg";
 
 import image11 from "../assets/images/image11.jpg";
+import anhnhom50 from "../assets/images/anhnhom50.jpg";
 
 export const ImgApps = {
   image1,
@@ -17,4 +18,5 @@ export const ImgApps = {
   home1,
   home2,
   home3,
+  anhnhom50,
 };

@@ -62,32 +62,41 @@ const items1 = [
 
 const HeaderC = () => {
   return (
-    <Header
-      className="header"
-      style={{
-        display: "flex",
-        alignItems: "center",
-        padding: "0 20px",
-      }}
-    >
-      {/* Logo */}
-      <div className="logo" style={{ marginRight: "20px" }}>
+    <div>
+      <div className="header1">
         <img
           src={ImgApps.logo}
-          alt="Logo"
-          style={{ height: "90px", objectFit: "contain" }}
+          style={{
+            height: "90px",
+            borderRadius: "5px",
+            margin: "5px",
+            cursor: "pointer",
+            objectFit: "contain",
+          }}
         />
+        <h2 style={{ color: "white" }}>Tìm trọ không khó có Trọ Hub lo</h2>
       </div>
+      <Header
+        className="header"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          padding: "0 20px",
+        }}
+      >
+        {/* Logo */}
+        <div className="logo" style={{ marginRight: "20px" }}></div>
 
-      {/* Menu */}
-      <Menu
-        theme="light"
-        mode="horizontal"
-        defaultSelectedKeys={["2"]}
-        items={items1}
-        style={{ flex: 1 }}
-      />
-    </Header>
+        {/* Menu */}
+        <Menu
+          theme="light"
+          mode="horizontal"
+          defaultSelectedKeys={["2"]}
+          items={items1}
+          style={{ flex: 1 }}
+        />
+      </Header>
+    </div>
   );
 };
 
