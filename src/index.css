@@ -24,3 +24,38 @@ button:hover {
 }
 .ant-layout {
 }
+
+.highlight {
+  display: inline-block;
+  animation: breakAndReassemble 3s ease-in-out;
+}
+
+@keyframes breakAndReassemble {
+  0% {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(1.2) translateX(160px) translateY(-30px);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.5) translateX(-400px) translateY(50px);
+    opacity: 0.4;
+  }
+  75% {
+    transform: scale(1.8) translateX(-300px) translateY(-100px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 1;
+  }
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+#comment {
+  margin-bottom: 50px;
+}

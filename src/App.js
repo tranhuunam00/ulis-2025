@@ -15,6 +15,9 @@ import { ImgApps } from "./constant/images";
 import RoomCard from "./components/comment/Comment ";
 import FooterC from "./components/Footer/Footer";
 import RegisterForm from "./components/login/login";
+import Introduction from "./components/intro/Introduction";
+import IntroductionWeb from "./components/introWeb/IntroductionWeb";
+import CommentSection from "./components/commentlist/Cmts";
 
 const { Content, Footer, Sider } = Layout;
 
@@ -130,13 +133,88 @@ const App = () => {
       </div>
       <div id="team-members">
         <TeamMembers />
-        <RegisterForm />
+        <Introduction />
       </div>
+
+      <h1 style={{ textAlign: "center" }}>Tính năng của TrọHUB</h1>
+      <IntroductionWeb />
+      <div className="visual">
+        <div className="card-cont">
+          {/* Tính năng: Thông tin ký túc xá */}
+          <Card
+            image={
+              "https://sonca.vn/wp-content/uploads/2023/11/Van-phong-pham-Kon-Tum-Cua-hang-van-phong-pham-Son-Ca-chuyen-ban-online-uy-tin-so-1-tai-Kon-Tum.png"
+            }
+            price={"Tra cứu thông tin ký túc xá dễ dàng"}
+            address={"Tính năng: Thông tin ký túc xá"}
+            des={`🌟 **Tính năng nổi bật**:
+- Tra cứu danh sách các phòng ký túc xá còn trống, giá thuê, và thông tin chi tiết.
+- Giao diện trực quan giúp sinh viên dễ dàng chọn phòng phù hợp.
+📚 **Tiện ích**:
+- Tìm kiếm theo tiêu chí: số lượng người/phòng, mức giá, hoặc tiện nghi (wifi, điều hòa, bàn học...).
+- Hỗ trợ sinh viên đặt phòng trực tuyến nhanh chóng và an toàn.
+💡 **Lợi ích**:
+- Tiết kiệm thời gian, không cần đến trực tiếp ký túc xá.
+- Thông tin cập nhật liên tục để đảm bảo độ chính xác.`}
+          />
+
+          {/* Tính năng: Thông tin phòng trọ */}
+          <Card
+            image={
+              "https://codesrevolvewordpress.s3.us-west-2.amazonaws.com/revolveai/2023/07/27103524/ai-based-recommendation-systems.png"
+            }
+            price={"Hỗ trợ tìm kiếm và gợi ý phòng trọ"}
+            address={"Tính năng: Thông tin phòng trọ"}
+            des={`🌟 **Tính năng nổi bật**:
+- Cung cấp danh sách phòng trọ gần các trường đại học với các tiêu chí chi tiết: giá, diện tích, tiện ích.
+- Hệ thống AI đề xuất phòng trọ phù hợp dựa trên nhu cầu và vị trí của người dùng.
+📚 **Tiện ích**:
+- Lọc phòng theo tiêu chí cá nhân: giá tiền, khoảng cách, hoặc loại hình phòng trọ.
+- Hiển thị bản đồ trực tiếp, giúp người dùng dễ dàng xác định vị trí.
+💡 **Lợi ích**:
+- Giúp người dùng nhanh chóng tìm được phòng trọ ưng ý.
+- Tăng tính minh bạch và an toàn trong việc kết nối với chủ trọ.`}
+          />
+
+          {/* Tính năng: Đăng ký nhận thông báo */}
+          <Card
+            image={
+              "https://subiz.com.vn/blog/wp-content/uploads/2022/11/subiz-bi-quyet-telesale-e1667384392973.png"
+            }
+            price={"Nhận thông báo tức thì từ hệ thống"}
+            address={"Tính năng: Đăng ký nhận thông báo"}
+            des={`🌟 **Tính năng nổi bật**:
+- Đăng ký nhận thông báo về:
+  - Ký túc xá có phòng trống.
+  - Phòng trọ phù hợp mới được đăng.
+  - Các sự kiện hoặc chương trình ưu đãi.
+📚 **Tiện ích**:
+- Chọn loại thông báo mong muốn: qua email, SMS hoặc thông báo trong ứng dụng.
+- Thời gian gửi thông báo tức thì khi có thông tin mới.
+💡 **Lợi ích**:
+- Không bỏ lỡ cơ hội tìm kiếm chỗ ở phù hợp.
+- Luôn được cập nhật thông tin mới nhất một cách thuận tiện.`}
+          />
+        </div>
+      </div>
+
+      <RegisterForm />
+
+      <h1 style={{ textAlign: "center" }}>Bộ Lọc</h1>
+      <Filter />
       <h1 style={{ textAlign: "center" }}>Thông tin Ký túc xá</h1>
 
       <div id="info" className="card-cont">
         {/* Ký túc xá Mễ Trì */}
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s"
           }
@@ -151,6 +229,14 @@ const App = () => {
 
         {/* Ký túc xá Ngoại ngữ */}
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQZavufBF1-mPAVqW_aqscJSEI7yoHQecEuQ&s"
           }
@@ -165,6 +251,14 @@ const App = () => {
 
         {/* Ký túc xá Sư phạm */}
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={
             "https://cdyhn.vn/wp-content/uploads/2020/03/ki-tuc-xa-my-dinh9.jpg"
           }
@@ -179,6 +273,14 @@ const App = () => {
 
         {/* Ký túc xá khác */}
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={
             "https://css.vnu.edu.vn/sites/default/files/styles/large/public/logo/1_264175.jpg?itok=v9kCj-Ah"
           }
@@ -191,12 +293,17 @@ const App = () => {
         />
       </div>
 
-      <h1 style={{ textAlign: "center" }}>Bộ Lọc</h1>
-
-      <Filter />
       <h1 style={{ textAlign: "center" }}>Thông tin nhà trọ</h1>
       <div className="card-cont">
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={ImgApps.image11}
           price={"2tr9"}
           address={"Khu vực Nghĩa Tân"}
@@ -208,6 +315,14 @@ const App = () => {
 `}
         />
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={ImgApps.image9}
           price={"5tr"}
           address={"Ngõ 68 Cầu Giấy"}
@@ -227,6 +342,14 @@ vận chuyển đồ đạc
         />
 
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={ImgApps.image3}
           price={"3tr5"}
           address={"Ngõ 89 Phạm Văn Đồng, Mai Dịch"}
@@ -241,6 +364,14 @@ Nội thất: Điều hoà, nóng lạnh, tủ lạnh, máy giặt, gác xé
 `}
         />
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={ImgApps.image1}
           price={"1tr5"}
           address={"Ngõ 2 Hoàng Quốc Việt"}
@@ -258,6 +389,14 @@ Liên hệ: 0961197823.
         />
 
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={
             "https://media-cdn-v2.laodong.vn/storage/newsportal/2023/3/27/1172466/Phong-Tro.jpeg"
           }
@@ -277,6 +416,14 @@ Liên hệ: 0961197823.
         />
 
         <Card
+          linkMap={
+            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+          }
+          subImages={[
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
+          ]}
           image={
             "https://xaydungthuanphuoc.com/wp-content/uploads/2022/09/mau-phong-tro-co-gac-lung-dep2022-5.jpg"
           }
@@ -296,17 +443,17 @@ Có chỗ để xe, không
 `}
         />
       </div>
-      <h1 id="comment">Bình Luận</h1>
-      <div className="comment-cont">
-        {reviews.map((r) => (
-          <RoomCard room={r} />
-        ))}
+      <div id="comment">
+        <h1>Bình Luận</h1>
+
+        <CommentSection reviews={reviews} />
       </div>
-      <div id="footer"></div>
-      <FooterC />
-      <Footer style={{ textAlign: "center" }}>
-        ULIS 2024 ©{new Date().getFullYear()} Created by ULIS TE
-      </Footer>
+      <div id="footer">
+        <FooterC />
+        <Footer style={{ textAlign: "center" }}>
+          ULIS 2024 ©{new Date().getFullYear()} Created by ULIS TE
+        </Footer>
+      </div>
     </Layout>
   );
 };

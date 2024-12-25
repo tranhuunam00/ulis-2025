@@ -49,7 +49,7 @@ const RegisterForm = () => {
   return (
     <div className="register-form-container">
       <h2>ĐĂNG KÝ TÀI KHOẢN</h2>
-      <p>Để nhận thông báo mới nhất của TrọHub</p>
+      <p>để nhận thông báo về phòng trọ mới tại khu vực của bạn TrọHub</p>
       <form className="register-form" onSubmit={handleSubmit}>
         <div className="form-row">
           <div className="form-group">
@@ -90,13 +90,13 @@ const RegisterForm = () => {
             {errors.phone && <span className="error">{errors.phone}</span>}
           </div>
           <div className="form-group">
-            <label>Nhập mật khẩu *</label>
+            <label>Phường đang cư trú *</label>
             <input
-              type="password"
+              type="text"
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              placeholder="Nhập lại mật khẩu"
+              placeholder="Nhập phường đang cư trú"
             />
             {errors.confirmPassword && (
               <span className="error">{errors.confirmPassword}</span>

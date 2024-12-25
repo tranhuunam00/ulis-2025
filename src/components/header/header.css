@@ -1,9 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 .header {
-  background-color: white;
+  /* background-color: white; */
   position: fixed;
   z-index: 10;
   width: 100%;
+  background: linear-gradient(to bottom, #fde1d9, #f9c2c2c4);
+  height: 100px;
+  font-family: "Montserrat", sans-serif !important;
 }
 .header .ant-layout-header {
   background: white;
+}
+.ant-menu-light {
+  /* background: linear-gradient(to bottom, #fde1d9, #f9c2c2); */
+  width: 100vw;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+.logo {
+  margin-left: 15%;
+  min-width: 50px;
 }

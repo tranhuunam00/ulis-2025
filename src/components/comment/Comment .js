@@ -54,7 +54,7 @@ const styles = {
     backgroundColor: "#f5f5f5",
   },
   card: {
-    width: "40%",
+    width: "1200px",
     padding: "20px",
     borderRadius: "10px",
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
@@ -63,10 +63,11 @@ const styles = {
   title: {
     marginBottom: "10px",
     color: "#333",
+    fontWeight: "bold",
   },
   description: {
     marginBottom: "15px",
-    color: "#666",
+    color: "black",
   },
   rating: {
     marginBottom: "15px",

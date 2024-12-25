@@ -1,0 +1,49 @@
+/* Phong cách cho container */
+.comment2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.comment-cont {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.room-card-container {
+  transition: transform 5s ease, opacity 5s ease;
+  height: auto;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Thẻ được chọn (hiện rõ) */
+.room-card-container.active {
+  transform: scale(1);
+  opacity: 1;
+  animation: fadeIn 1s ease-out; /* Hiệu ứng hiện ra từ từ */
+}
+
+.room-card-container.inactive {
+  height: 0px;
+  display: none;
+}
+/* Hiệu ứng fade-in */
+@keyframes fadeIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

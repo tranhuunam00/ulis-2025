@@ -1,0 +1,38 @@
+.introduction-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fef6f6;
+  border-radius: 10px;
+  max-width: 1440px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.video-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-section {
+  flex: 1;
+}
+
+.text-section h2 {
+  font-size: 24px;
+  color: #a83f39;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
