@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/ulis-2025/static/css/main.6f1164a0.css",
-    "main.js": "/ulis-2025/static/js/main.f00fd882.js",
+    "main.css": "/ulis-2025/static/css/main.f6e8fa7e.css",
+    "main.js": "/ulis-2025/static/js/main.11541062.js",
     "static/js/488.22357f90.chunk.js": "/ulis-2025/static/js/488.22357f90.chunk.js",
     "static/media/home3.jpg": "/ulis-2025/static/media/home3.c8e3842ad797ae3d64d9.jpg",
+    "static/media/thutra.jpg": "/ulis-2025/static/media/thutra.51f5b71ba32e7ce728a7.jpg",
+    "static/media/hoangtoan.jpg": "/ulis-2025/static/media/hoangtoan.af53b75af33ff018eb26.jpg",
+    "static/media/bicktra.jpg": "/ulis-2025/static/media/bicktra.9f5235b5521e7a20eb9e.jpg",
+    "static/media/thuong.jpg": "/ulis-2025/static/media/thuong.3d14ce8f69992b0c3a61.jpg",
     "static/media/image9.jpg": "/ulis-2025/static/media/image9.d384cf85f0e756dfefb6.jpg",
     "static/media/image1.jpg": "/ulis-2025/static/media/image1.a7fcb1b01d5d9f9580f6.jpg",
     "static/media/home1.jpg": "/ulis-2025/static/media/home1.a184dcffc0cb8f34ee1b.jpg",
+    "static/media/thuTrang.jpg": "/ulis-2025/static/media/thuTrang.74cafbf668c107c7c65e.jpg",
     "static/media/image3.jpg": "/ulis-2025/static/media/image3.72a8b785183519287004.jpg",
     "static/media/image11.jpg": "/ulis-2025/static/media/image11.f5ac8de9365cd814bc3a.jpg",
+    "static/media/thetoan.jpg": "/ulis-2025/static/media/thetoan.5d967836049614cf7522.jpg",
+    "static/media/thuytien.jpg": "/ulis-2025/static/media/thuytien.389cc87132e2caa19532.jpg",
     "static/media/home2.jpg": "/ulis-2025/static/media/home2.78061b09765192825934.jpg",
     "static/media/anhnhom50.jpg": "/ulis-2025/static/media/anhnhom50.f65a5faa4b9d1fdacf62.jpg",
     "static/media/logo.png": "/ulis-2025/static/media/logo.92bcf5f35190fbdec171.png",
     "index.html": "/ulis-2025/index.html",
-    "main.6f1164a0.css.map": "/ulis-2025/static/css/main.6f1164a0.css.map",
-    "main.f00fd882.js.map": "/ulis-2025/static/js/main.f00fd882.js.map",
+    "main.f6e8fa7e.css.map": "/ulis-2025/static/css/main.f6e8fa7e.css.map",
+    "main.11541062.js.map": "/ulis-2025/static/js/main.11541062.js.map",
     "488.22357f90.chunk.js.map": "/ulis-2025/static/js/488.22357f90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f1164a0.css",
-    "static/js/main.f00fd882.js"
+    "static/css/main.f6e8fa7e.css",
+    "static/js/main.11541062.js"
   ]
 }

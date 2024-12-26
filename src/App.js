@@ -198,8 +198,6 @@ const App = () => {
         </div>
       </div>
 
-      <RegisterForm />
-
       <h1 style={{ textAlign: "center" }}>Bộ Lọc</h1>
       <Filter />
       <h1 style={{ textAlign: "center" }}>Thông tin Ký túc xá</h1>
@@ -230,7 +228,7 @@ const App = () => {
         {/* Ký túc xá Ngoại ngữ */}
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/dir//K%C3%BD+t%C3%BAc+x%C3%A1+ngo%E1%BA%A1i+ng%E1%BB%AF+(VNU+dormitory),+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Qu%E1%BB%91c+gia+H%C3%A0+N%E1%BB%99i%2F144+%C4%90.+Xu%C3%A2n+Th%E1%BB%A7y,+D%E1%BB%8Bch+V%E1%BB%8Dng+H%E1%BA%ADu,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0402673,105.779649,1169m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3135ab10d3ea3983:0xed3dc2d1bf4b1619!2m2!1d105.7823496!2d21.0406017?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://nncn.edu.vn/wp-content/uploads/2021/06/ky-tuc-xa-cao-dang-ngoai-ngu-cong-nghe-ha-noi-.jpg",
@@ -252,7 +250,7 @@ const App = () => {
         {/* Ký túc xá Sư phạm */}
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/K%C3%BD+t%C3%BAc+x%C3%A1+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+S%C6%B0+ph%E1%BA%A1m+H%C3%A0+N%E1%BB%99i/@21.04072,105.7819073,1169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3135ab345cc4acf7:0xeb0c296556f22ff!8m2!3d21.04072!4d105.7844876!16s%2Fg%2F1hc1kbvsb?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://kytucxa.hnue.edu.vn/portals/0/Users/A511.jpg",
@@ -274,7 +272,7 @@ const App = () => {
         {/* Ký túc xá khác */}
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/K%C3%BD+T%C3%BAc+X%C3%A1+M%E1%BB%B9+%C4%90%C3%ACnh/@21.0334536,105.7635976,1169m/data=!3m1!1e3!4m10!1m2!2m1!1za-G6vyB0w7pjIHjDoyBt4bu5IMSRw6xuaA!3m6!1s0x3135ab0bf0f1742f:0xe820ab53e8c05841!8m2!3d21.0338719!4d105.7666013!15sChlr4bq_IHTDumMgeMOjIG3hu7kgxJHDrG5oWhsiGWvhur8gdMO6YyB4w6MgbeG7uSDEkcOsbmiSARFzdHVkZW50X2Rvcm1pdG9yeZoBJENoZERTVWhOTUc5blMwVkpRMEZuU1VRdGVXTjFXRzFuUlJBQuABAPoBBAgAECo!16s%2Fg%2F11j5s7mnc5?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROgTyfVFXvHJk9x4LCJL17mGFriio8vhu8Aw&s",
@@ -297,7 +295,7 @@ const App = () => {
       <div className="card-cont">
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/3+Ng%C3%B5+T%C3%A2n+%C4%90%C3%B4,+Ngh%C4%A9a+T%C3%A2n,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0458003,105.7888684,1169m/data=!3m2!1e3!4b1!4m5!3m4!1s0x3135ab304e67a753:0xdd8495b3b942fb8d!8m2!3d21.0458003!4d105.7914487?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTzBfF1TMOPQz7jTcRRt23qs2HsNjvARkCg&s",
@@ -316,7 +314,7 @@ const App = () => {
         />
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/Ng.+68+%C4%90.+C%E1%BA%A7u+Gi%E1%BA%A5y,+Quan+Hoa,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0458003,105.7888684,1169m/data=!3m1!1e3!4m6!3m5!1s0x3135ab40e004159b:0x78b0bd69d4796ef7!8m2!3d21.033104!4d105.8021221!16s%2Fg%2F1tftz0cc?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://vov.vn/sites/default/files/styles/large/public/2024-06/h5_1.jpg",
@@ -343,7 +341,7 @@ vận chuyển đồ đạc
 
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/Ng%C3%B5+89+%C4%90%C6%B0%E1%BB%9Dng+Ph%E1%BA%A1m+V%C4%83n+%C4%90%E1%BB%93ng,+Mai+D%E1%BB%8Bch,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.043278,105.7776551,1169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x313454cca30c3f95:0x9626e09f681b7ea!8m2!3d21.043278!4d105.7802354!16s%2Fg%2F11pktmb2b1?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://images2.thanhnien.vn/528068263637045248/2023/5/1/5620435b-1682962127518908546019.jpg",
@@ -365,7 +363,7 @@ Nội thất: Điều hoà, nóng lạnh, tủ lạnh, máy giặt, gác xé
         />
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/Ng.+2+Ho%C3%A0ng+Qu%E1%BB%91c+Vi%E1%BB%87t,+Ngh%C4%A9a+%C4%90%C3%B4,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0472832,105.8018625,1169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3135ab22ba802fcf:0x50a7ac178157f4a9!8m2!3d21.0472832!4d105.8044428!16s%2Fg%2F11c44l9pcl?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://thematrixones.com.vn/wp-content/uploads/2023/01/unnamed-1.jpg",
@@ -390,7 +388,7 @@ Liên hệ: 0961197823.
 
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/Ng.+2+Ho%C3%A0ng+Qu%E1%BB%91c+Vi%E1%BB%87t,+Ngh%C4%A9a+%C4%90%C3%B4,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0472832,105.8018625,1169m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3135ab22ba802fcf:0x50a7ac178157f4a9!8m2!3d21.0472832!4d105.8044428!16s%2Fg%2F11c44l9pcl?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqv11Z1REfhqyCtbNU4xfFZOphLYvkiKxh-g&s",
@@ -417,7 +415,7 @@ Liên hệ: 0961197823.
 
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/search/Ng%C3%B5+19+%C3%82u+C%C6%A1/@21.0741942,105.8138099,4675m/data=!3m2!1e3!4b1?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://cdnphoto.dantri.com.vn/I9iA7PASZi0nX_DZ4WRhw0HHqWU=/thumb_w/1020/2024/08/09/4bbd72acc5d9618738c8-1723194566288.jpg",
@@ -443,8 +441,10 @@ Có chỗ để xe, không
 `}
         />
       </div>
+      <RegisterForm />
+
       <div id="comment">
-        <h1>Bình Luận (7)</h1>
+        <h1>Đánh giá (7)</h1>
 
         <CommentSection reviews={reviews} />
       </div>
@@ -487,6 +487,37 @@ Có chỗ để xe, không
             objectFit: "contain",
           }}
         />
+      </div>
+
+      <div class="floating-menu">
+        <a href="#" class="menu-item" title="24/7 Support">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7438/7438038.png"
+            alt="24/7"
+          />
+        </a>
+        <a href="#" class="menu-item" title="Chat Support">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/9374/9374926.png"
+            alt="Chat"
+          />
+        </a>
+        <a href="#" class="menu-item" title="Customer Service">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/9670/9670815.png"
+            alt="Customer Service"
+          />
+        </a>
+        <a
+          href="https://zalo.me/0842864889"
+          class="menu-item"
+          title="Zalo Support"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1200px-Icon_of_Zalo.svg.png"
+            alt="Zalo"
+          />
+        </a>
       </div>
     </Layout>
   );

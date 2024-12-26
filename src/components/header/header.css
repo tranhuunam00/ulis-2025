@@ -39,3 +39,9 @@
 .header1 img {
   width: 190px;
 }
+.ant-menu-horizontal {
+  display: flex;
+  justify-content: center; /* Căn giữa các mục menu */
+  background-color: transparent; /* Để khớp với nền */
+  border-bottom: none; /* Ẩn đường kẻ dưới menu */
+}

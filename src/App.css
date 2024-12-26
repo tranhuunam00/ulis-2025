@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .App-logo {
@@ -62,11 +63,45 @@ h1 {
   width: 100%;
   background: linear-gradient(to bottom right, #e7ca69, #1908af77, #acf080c4);
   height: 100px;
-  font-family: "Montserrat", sans-serif !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Montserrat", sans-serif !important;
 }
 .f2 img {
   width: 160px;
+}
+.floating-menu {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000; /* Hiển thị phía trên các phần tử khác */
+}
+
+.menu-item {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  background-color: #f54b64; /* Màu nền */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.menu-item img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.menu-item:hover {
+  transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+  background-color: #ffa500; /* Thay đổi màu nền khi hover */
 }

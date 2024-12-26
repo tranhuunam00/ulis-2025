@@ -1,48 +1,42 @@
 import React from "react";
 import "./TeamMembers.css";
+import { ImgApps } from "../../constant/images";
 
 const members = [
   {
     id: 1,
     name: "Nguyễn Hoài Thương",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.thuong,
   },
   {
     id: 2,
     name: "Lê Trương Thủy Tiên",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.thuytien,
   },
   {
     id: 3,
     name: "Hoàng Ngọc Khánh Toàn (Trưởng nhóm)",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.hoangtoan,
   },
   {
     id: 4,
     name: "Trương Thế Toàn",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.thetoan,
   },
   {
     id: 5,
     name: "Lê Thị Thu Trà",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.thutra,
   },
   {
     id: 6,
     name: "Vũ Thị Bích Trà",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.bicktra,
   },
   {
     id: 7,
     name: "Chu Lê Thu Trang",
-    image:
-      "https://dongphucgiadinh.com/wp-content/uploads/2022/09/dong-phuc-dai-hoc-quoc-gia-ha-noi-3.jpg",
+    image: ImgApps.thuTrang,
   },
 ];
 
