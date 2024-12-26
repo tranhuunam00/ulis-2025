@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   LaptopOutlined,
   NotificationOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { Breadcrumb, Layout, Menu, theme } from "antd";
+import { Breadcrumb, Layout, Menu, Modal, theme } from "antd";
 import HeaderC from "./components/header/Header";
 import Slideshow from "./components/Slideshow/Slideshow";
 import TeamMembers from "./components/TeamMenber/TeamMembers";
@@ -122,6 +122,18 @@ const items2 = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
 );
 
 const App = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+
+  const openModal = (content) => {
+    setModalContent(content);
+    setIsModalVisible(true);
+  };
+
+  const closeModal = () => {
+    setIsModalVisible(false);
+    setModalContent("");
+  };
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -206,7 +218,7 @@ const App = () => {
         {/* Ký túc xá Mễ Trì */}
         <Card
           linkMap={
-            "https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+H%E1%BB%8Dc+Ngo%E1%BA%A1i+Ng%E1%BB%AF+-+%C4%90HQGHN/@21.0392474,105.7792392,17z/data=!3m1!4b1!4m6!3m5!1s0x313454cacd93cc57:0x465a0246eecc8c72!8m2!3d21.0392424!4d105.7818141!16s%2Fm%2F063zld9?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+            "https://www.google.com/maps/place/K%C3%BD+T%C3%BAc+X%C3%A1+M%E1%BB%85+Tr%C3%AC/@20.9909042,105.7939268,1170m/data=!3m1!1e3!4m14!1m7!3m6!1s0x3135acb902df4ae5:0xd4b1d54284c738ea!2zS8O9IFTDumMgWMOhIE3hu4UgVHLDrA!8m2!3d20.9909042!4d105.7965071!16s%2Fg%2F1hm5_cdby!3m5!1s0x3135acb902df4ae5:0xd4b1d54284c738ea!8m2!3d20.9909042!4d105.7965071!16s%2Fg%2F1hm5_cdby?hl=vi&entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
           }
           subImages={[
             "https://ussh.vnu.edu.vn/uploads/ussh/news/2020_04/untitled-20200415095242156.png",
@@ -489,20 +501,85 @@ Có chỗ để xe, không
         />
       </div>
 
-      <div class="floating-menu">
-        <a href="#" class="menu-item" title="24/7 Support">
+      <div className="floating-menu">
+        <a
+          href="#"
+          className="menu-item"
+          title="24/7 Support"
+          onClick={() =>
+            openModal(
+              <div>
+                <h2>Hỗ trợ tư vấn 24/7</h2>
+                <img
+                  width={300}
+                  src="https://cdn.tuoitre.vn/thumb_w/480/471584752817336320/2023/7/28/photo-1690539991405-1690539991465230938310.jpg"
+                ></img>
+                <p>
+                  Chúng tôi cam kết mang đến dịch vụ hỗ trợ tận tâm suốt 24/7,
+                  sẵn sàng giải đáp mọi thắc mắc của bạn về tìm kiếm, lựa chọn
+                  phòng trọ hoặc các vấn đề liên quan. Đội ngũ tư vấn viên luôn
+                  trực tuyến để đảm bảo bạn nhận được sự hỗ trợ kịp thời và
+                  chính xác.
+                </p>
+              </div>
+            )
+          }
+        >
           <img
             src="https://cdn-icons-png.flaticon.com/512/7438/7438038.png"
             alt="24/7"
           />
         </a>
-        <a href="#" class="menu-item" title="Chat Support">
+        <a
+          href="#"
+          className="menu-item"
+          title="Chat Support"
+          onClick={() =>
+            openModal(
+              <div>
+                <h2>Chat bot hỗ trợ</h2>
+                <img
+                  width={300}
+                  src="https://suachualaptop24h.com/upload_images/images/2023/04/10/chatbot-ai-co-the-lam-mat-thong-tin-nguoi-dung-02.jpg"
+                ></img>
+                <p>
+                  Với hệ thống chatbot thông minh, bạn có thể nhanh chóng nhận
+                  được câu trả lời cho các câu hỏi phổ biến mà không cần chờ
+                  đợi. Chat bot sẽ cung cấp thông tin về phòng trọ, hướng dẫn sử
+                  dụng website và hỗ trợ bạn trong việc tìm kiếm các giải pháp
+                  phù hợp.
+                </p>
+              </div>
+            )
+          }
+        >
           <img
             src="https://cdn-icons-png.flaticon.com/512/9374/9374926.png"
             alt="Chat"
           />
         </a>
-        <a href="#" class="menu-item" title="Customer Service">
+        <a
+          href="#"
+          className="menu-item"
+          title="Customer Service"
+          onClick={() =>
+            openModal(
+              <div>
+                <h2>Kết nối với chủ nhà</h2>
+                <img
+                  width={300}
+                  src="https://baodongnai.com.vn/file/e7837c02876411cd0187645a2551379f/dataimages/202003/original/images2276579_t13_1.jpg"
+                ></img>
+                <p>
+                  Chức năng này giúp bạn dễ dàng liên lạc trực tiếp với chủ nhà
+                  để trao đổi về thông tin phòng trọ, giá cả, điều kiện thuê và
+                  các yêu cầu khác. Chúng tôi đảm bảo việc kết nối nhanh chóng
+                  và tiện lợi để bạn tìm được phòng trọ ưng ý.
+                </p>
+              </div>
+            )
+          }
+        >
           <img
             src="https://cdn-icons-png.flaticon.com/512/9670/9670815.png"
             alt="Customer Service"
@@ -510,8 +587,10 @@ Có chỗ để xe, không
         </a>
         <a
           href="https://zalo.me/0842864889"
-          class="menu-item"
+          className="menu-item"
           title="Zalo Support"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Icon_of_Zalo.svg/1200px-Icon_of_Zalo.svg.png"
@@ -519,6 +598,17 @@ Có chỗ để xe, không
           />
         </a>
       </div>
+
+      {/* Modal */}
+      <Modal
+        title="Thông tin"
+        visible={isModalVisible}
+        onCancel={closeModal}
+        onOk={closeModal}
+        footer={null} // Tùy chọn ẩn nút Footer
+      >
+        {modalContent}
+      </Modal>
     </Layout>
   );
 };
